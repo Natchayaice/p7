@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<head>
+	<title>Page</title>
+</head>
+<style>
+div {Font-Family:"PSL Kanda ExtraSP";Font-Size:20pt;}
+a {Font-Family:"PSL Kanda ExtraSP";Font-Size:20pt;}
+p{Font-Family:"PSL Kanda ExtraSP";Font-Size:20pt;}
+h3 {Font-Family:"PSL Kanda ExtraSP";Font-Size:20pt;}
+</style>
+<body  style="background-image:url(bg11.jpg);background-attachment: fixed;">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button"><b>HOME</b> </a>
+	<a href="#project" class="w3-bar-item w3-button w3-right w3-hide-small">ABOUT ME</a>
+	<a href="#project" class="w3-bar-item w3-button w3-right w3-hide-small">MAPS</a>
+	<a href="#project" class="w3-bar-item w3-button w3-right">MENU</a>
+    
+    </div>
+ </div>
+</div>
+<!-- Section -->
+<br><br><br><br><br>
+
+	<div class="w3-center w3-content"> 
+		<h1>ร้านอาหาร</span></h1>
+	</div><br>  
+	<div class="w3-container w3-padding w3-card-2 w3-center w3-black w3-opacity-min">
+		<p>เปิดให้บริการทุกวัน เวลา 10.00-22.00 น.</p>
+		<p>ร้านอาหารชื่อดัง อาหารสด อร่อย ถูกหลักอนามัย และถูกปากถูกใจ สามารถรับประทานได้ทั้งครอบครัว</p>
+	</div>
+	<div class="w3-content w3-display-container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+			<img class="mySlides w3-display-middle" src="อ1.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ2.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ3.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ4.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ5.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ6.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ7.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ8.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ9.jpg" style="width:88%">
+			<img class="mySlides w3-display-middle" src="อ10.jpg" style="width:88%">
+
+
+			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+	</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+</body>
+</html>
